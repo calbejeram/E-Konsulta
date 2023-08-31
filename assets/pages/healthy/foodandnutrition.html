@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="icon"
+      href="/assets/images/logobrand.png"
+      type="image/icon type"
+    />
+    <title>Food and Nutrition | Healthy Living</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <section id="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+              <!-- Navbar toggler button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- Navbar Logo -->
+              <a class="navbar-brand fw-bold fs-5 m-0" href="/#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+              <!-- Search Button Toggler modal -->
+              <button type="button" class="btn btn-transparent d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal" style="font-size: 1.5rem;">
+                <i class="bi bi-search"></i>
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search your symptoms" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-info">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navbar toggler -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="nav nav-pills nav-fill p-1 rounded-1 d-flex flex-column flex-lg-row ms-auto" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                      <li class="nav-item" role="presentation">
+                      <a href="/#" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
+                            <i class="bi bi-house me-3 d-lg-none"></i>
+                            Home
+                          </button>
+                      </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <a href="/#faqs" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-question-circle me-3 d-lg-none"></i>
+                            FAQs
+                          </button>
+                      </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <a href="/#about" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-file-earmark-person me-3 d-lg-none"></i>
+                            About
+                          </button>
+                      </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                      <a href="#contact" class="nav-link px-0">
+                          <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                            <i class="bi bi-person-rolodex me-3 d-lg-none"></i>
+                            Contacts
+                          </button>
+                      </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
+      </section>
+      <!-- End of Navbar -->
+    </header>
+
+    <main>
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/#main-content">
+                      <i class="bi bi-clipboard-check"></i>
+                      Get Started
+                    </a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="/assets/pages/healthy/h-living.html"
+                      >Healthy Living</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Food and Nutrition
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-md-block d-lg-none">
+              <div class="accordion accordion-flush mb-3" id="accordion-page">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#on-this-page1"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      <b><i class="bi bi-file-break"></i>On this Page </b>
+                    </button>
+                  </h2>
+                  <div
+                    id="on-this-page1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-page"
+                  >
+                    <div class="accordion-body">
+                      <div
+                        class="scrollspy-example"
+                        data-bs-spy="scroll"
+                        data-bs-target="#on-this-page"
+                        data-bs-smooth-scroll="true"
+                        tabindex="0"
+                      >
+                        <div id="on-this-page" class="list-group">
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-1"
+                            >Eating well</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-2"
+                            >Health benefits of eating well</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-3"
+                            >Food safety and hygiene</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-4"
+                            >Healthy eating and weight loss</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-5"
+                            >Special Diets</a
+                          >
+                          <a
+                            class="list-group-item list-group-item-action"
+                            href="#list-item-6"
+                            >Pregnancy</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-9 p-3 bg-white rounded-2 scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#list-example"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <img
+                src="/assets/images/foodandnutrition.jpg"
+                alt="Food and Nutrition images"
+                class="img-fluid mb-4"
+              />
+              <h2 id="list-item-1"><mark>Eating well</mark></h2>
+              <p>
+                The Eatwell Guide outlines the recommendations for eating a
+                healthy balanced diet.
+              </p>
+              <p>
+                The guide shows the different types of foods and drinks you
+                should consume - and in what proportions - every day or over a
+                week.
+              </p>
+
+              <br />
+
+              <h2 id="list-item-2">
+                <mark>Health benefits of eating well</mark>
+              </h2>
+              <iframe
+                class="my-3"
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/Ygpda550uLQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+
+              <br />
+
+              <h2 id="list-item-3"><mark>Food safety and hygiene</mark></h2>
+              <p>
+                What you can do to stop the spread of bacteria when cooing,
+                preparing, and storing food.
+              </p>
+
+              <iframe
+                class="my-3"
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/0J2Qv_72Xzo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+
+              <br />
+
+              <h2 id="list-item-4">
+                <mark>Healthy eating and weight loss</mark>
+              </h2>
+              <p>Why your health and weight range are important.</p>
+              <p>
+                What can you do to safely lose weight and including portion
+                control.
+              </p>
+
+              <img
+                src="/assets/images/bmi.jpg"
+                alt="BMI image"
+                class="img-fluid"
+              />
+              <br />
+
+              <h2 id="list-item-5"><mark>Special Diets</mark></h2>
+              <p>
+                Foods you can eat and those to avoid if you can't eat gluten.
+              </p>
+
+              <h2 id="list-item-6"><mark>Pregnancy</mark></h2>
+              <p>How to eat healthy in pregnancy and which foods to avoid</p>
+              <p>
+                Which vitamins and nutrients are important for a health
+                pregnancy.
+              </p>
+
+              <br />
+            </div>
+            <div
+              class="col-lg-3 d-none d-lg-block scrollspy-example"
+              data-bs-spy="scroll"
+              data-bs-target="#on-this-page2"
+              data-bs-smooth-scroll="true"
+              tabindex="0"
+            >
+              <div id="on-this-page2" class="list-group">
+                <h5>
+                  <i class="bi bi-file-break"></i>
+                  On this page
+                </h5>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-1"
+                  >Eating well</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-2"
+                  >Health benefits of eating well</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-3"
+                  >Food safety and hygiene</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-4"
+                  >Healthy eating and weight loss</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-5"
+                  >Special Diets</a
+                >
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-6"
+                  >Pregnancy</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Was this page helpful -->
+          <div class="row">
+            <div class="col-7 my-3 col-md-8 col-lg-7">
+              <h5>Was this page helpful?</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio1"
+                  ><i class="bi bi-hand-thumbs-up"></i
+                ></label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btnradio2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btnradio2"
+                  ><i class="bi bi-hand-thumbs-down"></i
+                ></label>
+              </div>
+            </div>
+            <!-- Back to top button -->
+            <div class="col-5 mt-3 col-md-4 col-lg-5">
+              <a class="btn btn-primary" href="#" role="button">
+                <i class="bi bi-arrow-up-square"></i>
+                Back to top
+              </a>
+            </div>
+          </div>
+
+          <!-- Rate this page -->
+          <div class="row">
+            <div class="col-12 my-3">
+              <h5>Rate this page</h5>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic checkbox toggle button group"
+              >
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck1"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck1"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck2"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck3"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck3"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck4"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck4"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btncheck5"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-warning" for="btncheck5"
+                  ><i class="bi bi-star-fill"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Footer Section -->
+        <section id="contact" class="pt-3 pt-md-3 pt-lg-5">
+            <div class="container">
+              <!-- Contact and Form Label -->
+                <a class="navbar-brand fw-bold fs-5" href="#"><img src="/assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+                <h6 class="mt-3">Help me improve this <span class="text-danger">website</span> by sending a suggestion</h6>
+                <p>Fill out the form below.</p>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 ">
+                      <!-- Forms -->
+                      <form class="needs-validation mb-3 mb-md-3 mb-lg-0">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+                          <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                              <label for="floatingInput">First Name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                              <label for="floatingInput">Last Name</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="suggestion-box" required></textarea>
+                          <label for="floatingTextarea">Comments or Suggestions</label>
+                        </div>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="d-grid my-3">
+                              <button class="btn btn-info fw-bold" type="submit">
+                                Send
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                       <!-- Legals -->
+                    <div class="col-4 col-lg-2">
+                      <h6 class="fw-bold">Legals</h6>
+                      <p class="small"><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Terms and Condition</a></p>
+                      <p class="small"><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
+                      <p class="small"><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accessibility Policy</a></p>
+                    </div>
+
+                    <!-- References -->
+                    <div class="col-4 col-lg-2">
+                      <h6 class="fw-bold">References</h6>
+                      <p class="small"><a href="https://nhsinform.scot" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">NHS inform</a></p>
+                      <p class="small"><a href="https://getbootstrap.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Bootstrap</a></p>
+                      <p class="small"><a href="https://google.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Google</a></p>
+                      <p class="small"><a href="https://youtube.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Youtube</a></p>
+                      <p class="small"><a href="https://cssgradient.io" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">Gradient Generator</a></p>
+                    </div>
+                    
+                    <!-- Contacts -->
+                    <div class="col-4 col-lg-2">
+                      <h6 class="fw-bold">Contacts</h6>
+                      <p class="small"><a href="tel:911" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                        <i class="bi bi-telephone-fill"></i>
+                        Phone
+                      </a></p>
+                      <p class="small"><a href="mailto:randomemail@gmail.com" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+                        <i class="bi bi-envelope-fill"></i>
+                        Email
+                      </a></p>
+
+                      <h6 class="mt-5 fw-bold">Socials</h6>
+                      <a href="https://facebook.com" title="Facebook"><i class="bi bi-facebook me-0 me-md-3 me-lg-3" style="font-size: 1.5rem;"></i></a>
+                      <a href="https://twitter.com" title="Twitter"><i class="bi bi-twitter me-0 me-md-3 me-lg-3" style="font-size: 1.5rem;"></i></a>
+                      <a href="https://instagram.com" title="Instagram"><i class="bi bi-instagram me-0 me-md-3 me-lg-3" style="font-size: 1.5rem;"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                    <p class="text-center">Allrights reserved &copy; <img src="/assets/images/logobrand.png" alt="logobrand" style="width: 20px;">E-Konsulta Medical 2023</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- End of Footer Section -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
