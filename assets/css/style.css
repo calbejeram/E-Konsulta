@@ -17,7 +17,7 @@ body {
 
 /* Hero */
 #hero {
-    background: url('https://www.manulife.com.ph/about-us/blog/what-is-online-doctor-consultation-and-can-we-get-it-for-free/_jcr_content/root/responsivegrid_641029165/responsivegrid_62007/responsivegrid_1872166159/responsivegrid_1957410388/image.coreimg.82.1000.jpeg/1611169183538/national-cancer-institute-nfvdkihxylu-unsplash.jpeg') center center/ cover;
+    background: url(https://www.manulife.com.ph/about-us/blog/what-is-online-doctor-consultation-and-can-we-get-it-for-free/_jcr_content/root/responsivegrid_641029165/responsivegrid_62007/responsivegrid_1872166159/responsivegrid_1957410388/image.coreimg.82.1000.jpeg/1611169183538/national-cancer-institute-nfvdkihxylu-unsplash.jpeg) center center/ cover;
     height: 100vh;
 }
 
