@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- Navbar -->
-        <section id="header" class="position-fixed w-100 z-1">
+        <section id="header" class="w-100 position-fixed">
           <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- Navbar toggler button -->
@@ -25,7 +25,7 @@
                   <span class="navbar-toggler-icon"></span>
                 </button> 
                 <!-- Navbar Logo -->
-                <a class="navbar-brand fw-bold fs-5 m-0" href="#"><img src="./assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
+                <a class="navbar-brand fw-bold fs-5 m-0" href="#"><img src="./assets/images/logobrand.png" alt="Narbar Brand Image" class="navbar-brand-image">E-Konsulta</a>
                 <!-- Search Button Toggler modal -->
                 <button type="button" class="btn btn-transparent d-lg-none" data-bs-toggle="modal" data-bs-target="#searchModal" style="font-size: 1.5rem;">
                   <i class="bi bi-search"></i>
@@ -49,34 +49,34 @@
                 </div>
                 <!-- Navbar toggler -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav nav-pills nav-fill p-1 rounded-1 d-flex flex-column flex-lg-row ms-auto" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                    <ul class="nav nav-pills nav-fill p-1 rounded-1 d-flex flex-column flex-lg-row ms-auto" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-black); --bs-nav-pills-link-active-bg: var(--bs-primary);">
                         <li class="nav-item" role="presentation">
-                        <a href="#" class="nav-link px-0">
-                            <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
+                        <a href="#" class="nav-link p-0">
+                            <button class="nav-link d-flex flex-row align-items-start justify-content-start fw-medium text-white" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">
                               <i class="bi bi-house me-3 d-lg-none"></i>
                               Home
                             </button>
                         </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                        <a href="#faqs" class="nav-link px-0">
-                            <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                        <a href="#faqs" class="nav-link p-0">
+                            <button class="nav-link d-flex flex-row align-items-start justify-content-start fw-medium text-white" id="faqs-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
                               <i class="bi bi-question-circle me-3 d-lg-none"></i>
                               FAQs
                             </button>
                         </a>
                         </li>
-                        <li class="nav-item" role="presentation">
-                        <a href="#about" class="nav-link px-0">
-                            <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                        <li class="nav-item yes" role="presentation">
+                        <a href="#about" class="nav-link p-0">
+                            <button class="nav-link d-flex flex-row align-items-start justify-content-start fw-medium text-white" id="about-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
                               <i class="bi bi-file-earmark-person me-3 d-lg-none"></i>
                               About
                             </button>
                         </a>
                         </li>
                         <li class="nav-item" role="presentation">
-                        <a href="#contact" class="nav-link px-0">
-                            <button class="nav-link d-flex flex-row align-items-start justify-content-start" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
+                        <a href="#contact" class="nav-link p-0">
+                            <button class="nav-link d-flex flex-row align-items-start justify-content-start fw-medium text-white" id="contacts-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">
                               <i class="bi bi-person-rolodex me-3 d-lg-none"></i>
                               Contacts
                             </button>
@@ -251,17 +251,20 @@
         <!-- About Section -->
         <section id="about">
             <div class="container py-5 h-100">
-                <div class="row align-items-center justify-content-center d-flex">
+                <div class="row d-flex">
                     <div class="col-lg" data-aos="fade-right">
                       <div class="text-center text-lg-start">
-                        <h2 class="display-4 text-center"><i class="bi bi-file-earmark-person"></i>About <span class="text-info">E-Konsulta Medical</span></h2>
+                        <h2 class="display-4 text-lg-start text-center"></i>About <span class="text-info">E-Konsulta Medical</span></h2>
                       </div>
                       <p class="lead">
                         E-Konsulta Medical is for any users with any common symptoms and seeking medical assistance with ease and how they are going to deal with it. This website aims to give informations about their symptoms and how to prevent and treat their specific common diseases.
                       </p>
+                      <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae incidunt optio suscipit minus reiciendis mollitia magnam rerum fugit totam quaerat aut tempore delectus odit, voluptatum inventore repellat, necessitatibus, eaque impedit atque excepturi ullam similique laudantium. Nihil porro nesciunt repellendus facere?
+                      </p>
                     </div>
                     <div class="col-md">
-                      <img src="assets/images/aboutimage.png" alt="About Image" class="img-fluid rounded-3">
+                      <img src="./assets/images/aboutimage.png" alt="About Image" class="img-fluid rounded-3">
                     </div>
                 </div>
             </div>
@@ -272,7 +275,7 @@
 
     <footer>
       <!-- Footer Section -->
-        <section id="contact" class="pt-3 pt-md-3 pt-lg-5">
+        <section id="contact" class="pt-2 pt-md-3 pt-lg-3">
             <div class="container">
               <!-- Contact and Form Label -->
                 <a class="navbar-brand fw-bold fs-5" href="#"><img src="./assets/images/logobrand.png" alt="" style="width: 50px;">E-Konsulta</a>
